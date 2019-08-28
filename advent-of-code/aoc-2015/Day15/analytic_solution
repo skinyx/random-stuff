@@ -1,0 +1,13 @@
+total(cap,d,f,t) = C1(5cap - d) * C2(3d - cap) * C3(4f -d) * C4(-cap + 2t)
+sprinkles(cap,d) = 5cap - d
+peanutbutter(cap,d) = -cap +3d
+frosting(d,f) = -d +4f
+sugar(cap,t) = -cap +2t
+
+C1 + C2 + C3 + C4 = 100
+
+(total)' =
+
+ C1(5cap - d) * C2(3d - cap) * C3(4f -d) * C4(-cap + 2t) = (16*c1*c2*cap*d - 5*c1*c2*cap^2 - 3*c1*c2*d^2) * (-4*c3*c4*f*cap + 8*c3*c4*f*t +c3*c4*d*cap - 2*c3*c4*d*t) =
+ (C1*5cap-C1*d)*(C2*3d-C2*cap) =  16*c1*c2*cap*d - 5*c1*c2*cap^2 - 3*c1*c2*d^2
+ (4C3*f -C3*d)*(-C4*cap+2*C4*t) = -4*c3*c4*f*cap + 8*c3*c4*f*t +c3*c4*d*cap - 2*c3*c4*d*t
